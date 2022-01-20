@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root {
+    --bg-gray: rgb(243, 243, 243);
+    --best-blue: #0C91FF;
+}
+
+body {
+    background-color: var(--bg-gray);
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+/* header */
+header nav {
+    padding: 0.8rem;
+    margin-bottom: 3.5rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--best-blue);
+}
+
+header nav a:hover {
+    border-bottom: 1px solid var(--best-blue);
+}
+
+/* main */
+.searchForm {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+#q {
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 24px;
+    margin: 0.3rem;
+    transition: .35s;
+    display: block;
+    width: 180px;
+    height: 25px;
+}
+
+#q:hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    transition: .35s;
+
+}
+
+#q:focus {
+    border: none;
+    outline: 1px ridge var(--best-blue);
+    width: 380px;
+}
+
+.container-main {
+    text-align: center;
+}
+
+.container-main h1{
+    font-weight: 400;
+    border-bottom: 1px solid var(--best-blue);
+    display: inline-block;
+}
+
+.section-result-search{
+    left: 0;
+    right: 0;
+    position:absolute;
+    margin: 0.5rem auto;
+    max-height: 350px;
+    max-width: 500px;
+    overflow-y: auto;
+    border-left: 1px solid rgb(226, 226, 226);
+    border-bottom: 1px solid rgb(226, 226, 226);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#resultSearch {
+    font-weight: bold;
+}
+
+#resultSearch li{
+    margin: 1rem;
+    padding: 0.1rem;
+    list-style: none;
+}
+
+.link-result{
+    padding: 6px 10px;
+    text-decoration: none;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 4px;
+    transition: .35s;
+}
+
+.link-result:hover{
+    background-color: white;
+    border: 1px solid white;
+
+    transition: .35s;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin: 30rem auto auto auto;
+}
