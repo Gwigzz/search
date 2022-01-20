@@ -1,1 +1,3 @@
-deny from All
+# denied all access if public is not loaded
+Order Allow,Deny
+Deny from all
