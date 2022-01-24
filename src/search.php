@@ -10,9 +10,6 @@ require '../db/db.php';
 $search = htmlspecialchars($_GET['q']);
 $result = "";
 
-// INJECTION SQL SPOTTED                   WARNING !!!
-/* $request = $bdd->prepare("SELECT * FROM `article` WHERE `title_article` LIKE '%$q%' OR description_articleLIKE '%$q%'"); */
-
 // SAFE METHOD
 $request = $bdd->prepare("SELECT * FROM `article` WHERE `title_article` LIKE :q");
 $request->bindValue(':q', '%' . $search . '%');
