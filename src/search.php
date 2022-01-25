@@ -2,19 +2,16 @@
 // db
 require '../db/db.php';
 
-##################################
-#  PREPARE REQUEST SEARCH IN DB 
-#__________________________________
-
 // get request & var
 $search = htmlspecialchars($_GET['q']);
 $result = "";
 
-// SAFE METHOD
+/* PREPARE REQUEST SEARCH IN DB */
 $request = $bdd->prepare("SELECT * FROM `article` WHERE `title_article` LIKE :q");
 $request->bindValue(':q', '%' . $search . '%');
 
-$request->execute(); # execute request
+# execute request
+$request->execute();
 
 /* Result */
 if ($search !== "") {
