@@ -24,9 +24,9 @@ if ($search !== "") {
         // reduce search from request and response
         if (stristr($search, substr($row['title_article'], 0, $lenghtSearch))) {
             if ($result === "") {
-                $result = '<li><a class="link-result" href="#!">' . htmlspecialchars($row['title_article']) . '</a></li>';
+                $result = '<li><a class="link-result" href="#!">' . $row['title_article'] . '</a></li>';
             } else {
-                $result .= '<li><a class="link-result" href="">' . htmlspecialchars($row['title_article']) . '</a></li>';
+                $result .= '<li><a class="link-result" href="">' . $row['title_article'] . '</a></li>';
             }
         }
     }

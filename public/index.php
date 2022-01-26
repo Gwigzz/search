@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <!-- header -->
     <header>
         <nav>
@@ -22,7 +21,6 @@
 
     <!-- main -->
     <main>
-
         <div class="container-main">
 
             <!-- Form Search -->
@@ -40,7 +38,6 @@
                 </ul>
             </section>
         </div>
-
     </main>
 
     <!-- footer -->
@@ -50,8 +47,6 @@
 
     <!-- JS -->
     <script src="./assets/js/request.js"></script>
-
-
 
 </body>
 
