@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>SEARCH</title>
+    <!-- JS -->
+    <script src="./assets/js/request.js" defer></script>
 </head>
 
 <body>
@@ -44,9 +46,6 @@
     <footer>
         <p>No Copyright 2022 &copy; </p>
     </footer>
-
-    <!-- JS -->
-    <script src="./assets/js/request.js"></script>
 
 </body>
 
