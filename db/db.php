@@ -1,5 +1,7 @@
 <?php
-// DB CONNEXION
+/**
+ * DB CONNECT
+ */
 try {
 
     $bdd = new PDO(
