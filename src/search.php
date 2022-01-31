@@ -6,7 +6,7 @@ require '../db/db.php';
 $search = htmlspecialchars($_GET['q']);
 $result = "";
 
-/* PREPARE REQUEST SEARCH IN DB */
+/* PREPARE REQUEST */
 $request = $bdd->prepare("SELECT * FROM `article` WHERE `title_article` LIKE :q");
 $request->bindValue(':q', '%' . $search . '%');
 
