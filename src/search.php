@@ -1,6 +1,5 @@
 <?php
-// db
-require '../db/db.php';
+require '../db/db.php'; // db
 
 // get request & var
 $search = htmlspecialchars($_GET['q']);
