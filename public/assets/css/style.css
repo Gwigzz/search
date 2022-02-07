@@ -1,18 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Montserrat:wght@200&family=Poppins:wght@200;300&display=swap');
 
 * {
     margin: 0;
 }
 
 :root {
-    --bg-gray: rgb(243, 243, 243);
+    --white: #fff;
+    --light-gray: #e2e2e2;
+    --bg-gray: #f3f3f3;
+    --gray: #808080;
     --best-blue: #0C91FF;
+    --black: #000;
 }
 
 body {
     background-color: var(--bg-gray);
-    font-family: 'Roboto', sans-serif;
-    ;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    /* Add more Font Family */
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 /* header */
@@ -32,17 +38,37 @@ header nav a:hover {
 
 /* main */
 .searchForm {
-    width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     padding: 0.5rem 0;
+    position: relative;
+}
+
+/* X (close) */
+#closeResult {
+    color: var(--gray);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    font-size: 25px;
+    transition: .3s;
+}
+
+#closeResult:hover{
+    color: var(--black);
+    transition: .3s;
+
 }
 
 #q {
     padding: 0.5rem;
-    border: 1px solid gray;
+    border: 1px solid var(--gray);
     border-radius: 24px;
     margin: 0.3rem;
     transition: .35s;
@@ -52,8 +78,8 @@ header nav a:hover {
 }
 
 #q:hover {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
     transition: .35s;
 
 }
@@ -61,44 +87,45 @@ header nav a:hover {
 #q:focus {
     border: none;
     outline: 1px ridge var(--best-blue);
-    width: 380px;
+    width: 200px;
 }
 
 .container-main {
     text-align: center;
 }
 
-.container-main h1{
+.container-main h1 {
     font-weight: 400;
-    border-bottom: 1px solid var(--best-blue);
-    display: inline-block;
+    display: block;
+    text-decoration: underline var(--best-blue) 1px;
 }
 
-.section-result-search{
+.section-result-search {
     left: 0;
     right: 0;
-    position:absolute;
+    position: absolute;
     margin: 0.5rem auto;
     max-height: 350px;
     max-width: 500px;
     overflow-y: auto;
-    border-left: 1px solid rgb(226, 226, 226);
-    border-bottom: 1px solid rgb(226, 226, 226);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 }
 
 #resultSearch {
     font-weight: bold;
+    display: none;
+    background-color: var(--white);
+    padding: 1.4rem 0.4rem;
 }
 
-#resultSearch li{
+#resultSearch li {
     margin: 1rem;
     padding: 0.1rem;
     list-style: none;
 }
 
-.link-result{
+.link-result {
     padding: 6px 10px;
     text-decoration: none;
     border: 1px solid rgb(224, 224, 224);
@@ -106,9 +133,9 @@ header nav a:hover {
     transition: .35s;
 }
 
-.link-result:hover{
-    background-color: white;
-    border: 1px solid white;
+.link-result:hover {
+    background-color: var(--white);
+    border: 1px solid var(--white);
 
     transition: .35s;
 }

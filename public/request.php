@@ -1,5 +1,5 @@
 <?php
-if (isset($_GET['q']) && !empty($_GET['q']) && $_GET['q'] !== "") {
+if (isset($_GET['q']) && !empty($_GET['q'])) {
     require '../src/search.php';
 }else{
     http_response_code(404);
