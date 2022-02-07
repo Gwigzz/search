@@ -8,4 +8,4 @@ A mini and simple project for search in database. With XMLHttpRequest PHP MYSQL.
 * MySQL >= 5.7
 
 ## Preview
-![Search](public/assets/img/search.png)
+![Search](public/assets/img/capture.JPG)
