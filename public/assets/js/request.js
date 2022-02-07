@@ -1,20 +1,25 @@
-// var result html
+// Input
+let input = document.getElementById('q');
+
+// Result html
 let resultSearch = document.getElementById("resultSearch");
 
-// function show search
-function showSearch(str) {
+// INPUT VALUE
+input.addEventListener('input', function () {
 
-    if (str.length == 0) {
-        resultSearch.innerHTML = "";
+    if (this.value == 0) {
+        resultSearch.innerHTML = '';
         return;
     }
 
-    // object XMLHttpRequest
+    // Object XMLHttpRequest
     const XHTTP = new XMLHttpRequest();
-
+    // Load
     XHTTP.onload = function () {
-        resultSearch.innerHTML = this.responseText;
+        resultSearch.innerHTML = `${this.responseText}`;
     }
-    XHTTP.open("GET", "/request.php?q=" + str);
+    XHTTP.open('GET', `/request.php?q=${this.value}`);
     XHTTP.send();
-}
+
+})
+

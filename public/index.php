@@ -31,7 +31,7 @@
 
             <div class="searchForm">
                 <label for="q"></label>
-                <input type="text" name="q" id="q" placeholder="You'r word here..." onkeyup="showSearch(this.value)" />
+                <input type="text" name="q" id="q" placeholder="Search..." />
             </div>
 
             <!-- result-->
