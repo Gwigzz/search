@@ -140,6 +140,11 @@ header nav a:hover {
     transition: .35s;
 }
 
+/* color result */
+.color-result{
+    color: orange;
+}
+
 /* footer */
 footer {
     text-align: center;

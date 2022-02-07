@@ -38,8 +38,14 @@ input.addEventListener('input', function () {
         const XHTTP = new XMLHttpRequest();
         // Load
         XHTTP.onload = function () {
+            
             resultSearch.innerHTML = `${this.responseText}`;
+
+            /* let colorResult = resultSearch.innerHTML = `${this.responseText}`;
+            console.log('RESPONSE TEXT : ' + this.responseText); */
+
         }
+        // request for value 
         XHTTP.open(`GET`, `/request.php?q=${this.value}`);
         XHTTP.send();
     }
