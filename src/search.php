@@ -7,6 +7,7 @@ $result = "";
 
 /* PREPARE REQUEST */
 $request = $bdd->prepare("SELECT * FROM `article` WHERE `title_article` LIKE :q");
+// Bind value
 $request->bindValue(':q', '%' . $search . '%');
 
 # execute request
