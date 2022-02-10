@@ -10,6 +10,7 @@
     --bg-gray: #f3f3f3;
     --gray: #808080;
     --best-blue: #0C91FF;
+    --orange: orange;
     --black: #000;
 }
 
@@ -142,7 +143,7 @@ header nav a:hover {
 
 /* color result */
 .color-result{
-    color: orange;
+    color: var(--orange);
 }
 
 /* footer */
