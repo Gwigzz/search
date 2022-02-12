@@ -1,6 +1,4 @@
-/**
- * Main Request
- */
+/* Main Request */
 // Input
 let input = document.getElementById('q');
 
