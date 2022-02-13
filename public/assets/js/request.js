@@ -1,4 +1,4 @@
-/* Main Request */
+/* MAIN REQUEST */
 // Input
 let input = document.getElementById('q');
 
@@ -13,24 +13,17 @@ input.addEventListener('input', function () {
 
     if (this.value == 0) {
 
-        // none X
-        spanX.style.display = 'none';
-
-        // Clear result
-        resultSearch.innerHTML = '';
-
-        // Close Result
-        resultSearch.style.display = 'none';
+        spanX.style.display = 'none';           // none X
+        resultSearch.innerHTML = '';            // Clear result
+        resultSearch.style.display = 'none';    // Close Result
 
         return;
     }
 
     if (this.value !== '') {
 
-        // Open span (X)
-        spanX.style.display = 'block';
-        // Open result
-        resultSearch.style.display = 'block';
+        spanX.style.display = 'block';          // Open span (X)
+        resultSearch.style.display = 'block';   // Open result
 
         // Object XMLHttpRequest
         const XHTTP = new XMLHttpRequest();
