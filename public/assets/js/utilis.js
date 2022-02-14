@@ -13,5 +13,4 @@ spanX.addEventListener('click', function () {
     spanX.style.display = 'none';
     // Close Result
     resultSearch.style.display = 'none';
-
 })
