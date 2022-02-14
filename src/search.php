@@ -8,7 +8,7 @@ $result = "";
 /* PREPARE REQUEST */
 $request = $bdd->prepare("SELECT * FROM `article` WHERE `title_article` LIKE :q");
 // Bind value
-$request->bindValue(':q', '%' . $search . '%');
+$request->bindValue(':q', '%' . $search . '%', PDO::PARAM_STR);
 
 # execute request
 $request->execute();
