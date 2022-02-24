@@ -1,8 +1,9 @@
 <?php
 require '../db/db.php';
 
-// get request & var
+// GET URL['q']
 $search = htmlspecialchars($_GET['q']);
+// Result
 $result = "";
 
 /* PREPARE REQUEST */
