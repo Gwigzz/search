@@ -64,7 +64,6 @@ header nav a:hover {
 #closeResult:hover{
     color: var(--black);
     transition: .3s;
-
 }
 
 #q {
